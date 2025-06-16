@@ -1,5 +1,6 @@
 #Libraries
 import os, time, msvcrt
+from functions import *
 #Libraries
 #MenuText
 menu = """MENU PRINCIPAL
@@ -17,18 +18,18 @@ while True:
     os.system('cls')
     #Options
     if option == '1':
-        pass
+        comprar_entrada()
     elif option == '2':
-        pass
+        consultar_comprador()
     elif option == '3':
-        pass
+        cancelar_compra()
     elif option == '4':
-        print("...Saliendo del programa...")
+        print("...Programa terminado...")
         time.sleep(1)
         break
     #Options
     else:
-        print("Opción Inválida")
+        print("¡Debe ingresar una opción válida!")
     print("...Presione una tecla para continuar...")
     msvcrt.getch()
 #Menu
