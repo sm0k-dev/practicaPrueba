@@ -38,10 +38,10 @@ def cancelar_compra():
     else:
         nombre_comprador = input("Ingrese nombre de comprador a buscar: ")
         existe = False
-        for compra in range(len(compras)):
+        for compra in compras:
             if nombre_comprador == compra["nombre"]:
                 existe = True
-                compras.pop(compra)
+                compras.remove(compra)
                 print("¡Compra cancelada!")
                 return
         if not existe:
